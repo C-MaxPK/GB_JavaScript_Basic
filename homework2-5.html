@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork №2</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        // Задание 5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции (использовать switch) выполнить одну из арифметических операций  (использовать функции из задания 4) и вернуть полученное значение.
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'сложение':
+                    return (arg1 + arg2);
+                case 'вычитание':
+                    return (arg1 - arg2);
+                case 'деление':
+                    return (arg1 / arg2);
+                case 'умножение':
+                    return (arg1 * arg2);
+            }
+        }
+
+        let result = mathOperation(2, 4, 'умножение');
+        alert(result);
+    </script>
+</body>
+</html>
