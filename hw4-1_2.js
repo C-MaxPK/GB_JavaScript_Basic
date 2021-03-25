@@ -6,7 +6,7 @@
 Объекты типа AttachedPost должны иметь метод makeTextHighlighted, который будет назначать свойству highlighted значение true. */
 
 //es5
-/* function Post(author, text, date) {
+function Post(author, text, date) {
     this.author = author;
     this.text = text;
     this.date = date;
@@ -30,7 +30,7 @@ AttachedPost.prototype.makeTextHighlighted = function() {
 
 let AttachedPost_1 = new AttachedPost(1, 'tomato', 2021);
 AttachedPost_1.edit('текст');
-AttachedPost_1.makeTextHighlighted(); */
+AttachedPost_1.makeTextHighlighted();
 
 //es6
 class Post {
