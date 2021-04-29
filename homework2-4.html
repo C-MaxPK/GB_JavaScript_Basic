@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork №2</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        // Задание 4. Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя параметрами. Т.е. например, функция для сложения должна принимать два числа, складывать их и возвращать результат. Обязательно использовать оператор return.
+
+        let a = +prompt('Введите первое число');
+        let b = +prompt('Введите второе число');
+
+        function getSum() {
+            return a + b;
+        }
+        function getSub() {
+            return a - b;
+        }
+        function getDiv() {
+            return a / b;
+        }
+        function getMul() {
+            return a * b;
+        }
+
+        alert ('Сумма чисел: ' + getSum());
+        alert ('Разность чисел: ' + getSub());
+        alert ('Отношение чисел: ' + getDiv());
+        alert ('Произведение чисел: ' + getMul());
+    </script>
+</body>
+</html>
