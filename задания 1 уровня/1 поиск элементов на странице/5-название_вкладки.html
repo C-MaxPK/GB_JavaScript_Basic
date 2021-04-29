@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница 1</title>
+</head>
+<body>
+    <!-- Задание. Выведите содержимое тега title в консоль. -->
+
+    <script>
+        'use strict';
+
+        let title = document.getElementsByTagName('title');
+        // напрямую, если один элемент
+        console.log(title[0].innerText);
+        // через цикл
+        for (let i=0; i < title.length; i++) {
+            console.log(title[i].innerText);
+        }
+
+        // вариант 2
+        let title2 = document.title;
+        console.log(title2);
+    </script>
+</body>
+</html>
